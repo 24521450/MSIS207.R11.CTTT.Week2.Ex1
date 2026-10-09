@@ -80,7 +80,10 @@ function hasValidElementProps(props: UnknownRecord): boolean {
     }
 
     if (/^on/i.test(property)) {
-      if (property !== "onClick" || !isMiniReactEventHandler(value)) {
+      if (
+        property !== "onClick" ||
+        (value !== null && value !== undefined && !isMiniReactEventHandler(value))
+      ) {
         return false;
       }
       continue;
