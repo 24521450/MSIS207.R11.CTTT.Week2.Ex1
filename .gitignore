@@ -1,0 +1,13 @@
+# Dependencies at the repository root and in exercise folders.
+**/node_modules/
+
+# Build output at the repository root and in exercise folders.
+**/dist/
+
+# Vite cache and generated Exercise 1 artefacts.
+**/.vite/
+Ex1/coverage/
+Ex1/*.tsbuildinfo
+Ex1/**/*.tsbuildinfo
+Ex1/*.log
+Ex1/**/*.log
